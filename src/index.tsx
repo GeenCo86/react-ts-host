@@ -1,7 +1,4 @@
-import * as React from "react";
-import App from "./components/App";
-import { createRoot } from "react-dom/client";
+// Use dynamic import here to allow webpack to interface with module federation code
+import("./bootstrap");
 
-const container = document.getElementById("root");
-const root = createRoot(container!);
-root.render(<App />);
+export {};
